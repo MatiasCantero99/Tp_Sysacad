@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditarCurso));
             label1 = new Label();
             textBoxNombre = new TextBox();
             textBoxCodigo = new TextBox();
@@ -39,65 +40,86 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(329, 84);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Times New Roman", 14F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            label1.Location = new Point(460, 216);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(37, 15);
+            label1.Size = new Size(171, 32);
             label1.TabIndex = 0;
-            label1.Text = "Editar";
+            label1.Text = "Editar Curso";
             // 
             // textBoxNombre
             // 
-            textBoxNombre.Location = new Point(24, 173);
+            textBoxNombre.BackColor = Color.Khaki;
+            textBoxNombre.BorderStyle = BorderStyle.None;
+            textBoxNombre.Location = new Point(470, 301);
+            textBoxNombre.Margin = new Padding(4, 5, 4, 5);
             textBoxNombre.Name = "textBoxNombre";
-            textBoxNombre.Size = new Size(100, 23);
+            textBoxNombre.Size = new Size(141, 24);
             textBoxNombre.TabIndex = 1;
             textBoxNombre.Text = "Nombre";
             // 
             // textBoxCodigo
             // 
-            textBoxCodigo.Location = new Point(168, 173);
+            textBoxCodigo.BackColor = Color.Khaki;
+            textBoxCodigo.BorderStyle = BorderStyle.None;
+            textBoxCodigo.Location = new Point(470, 360);
+            textBoxCodigo.Margin = new Padding(4, 5, 4, 5);
             textBoxCodigo.Name = "textBoxCodigo";
-            textBoxCodigo.Size = new Size(100, 23);
+            textBoxCodigo.Size = new Size(141, 24);
             textBoxCodigo.TabIndex = 2;
             textBoxCodigo.Text = "Codigo";
             // 
             // textBoxDescripcion
             // 
-            textBoxDescripcion.Location = new Point(304, 173);
+            textBoxDescripcion.BackColor = Color.Khaki;
+            textBoxDescripcion.BorderStyle = BorderStyle.None;
+            textBoxDescripcion.Location = new Point(470, 426);
+            textBoxDescripcion.Margin = new Padding(4, 5, 4, 5);
             textBoxDescripcion.Name = "textBoxDescripcion";
-            textBoxDescripcion.Size = new Size(117, 23);
+            textBoxDescripcion.Size = new Size(141, 24);
             textBoxDescripcion.TabIndex = 3;
             textBoxDescripcion.Text = "Descripcion";
             // 
             // textBoxCupoMax
             // 
-            textBoxCupoMax.Location = new Point(467, 173);
+            textBoxCupoMax.BackColor = Color.Khaki;
+            textBoxCupoMax.BorderStyle = BorderStyle.None;
+            textBoxCupoMax.Location = new Point(470, 488);
+            textBoxCupoMax.Margin = new Padding(4, 5, 4, 5);
             textBoxCupoMax.Name = "textBoxCupoMax";
-            textBoxCupoMax.Size = new Size(100, 23);
+            textBoxCupoMax.Size = new Size(141, 24);
             textBoxCupoMax.TabIndex = 4;
             textBoxCupoMax.Text = "Cupo Maximo";
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(304, 256);
+            btnAceptar.BackColor = Color.Gold;
+            btnAceptar.FlatAppearance.BorderSize = 0;
+            btnAceptar.FlatStyle = FlatStyle.Flat;
+            btnAceptar.Location = new Point(483, 565);
+            btnAceptar.Margin = new Padding(4, 5, 4, 5);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(75, 23);
+            btnAceptar.Size = new Size(107, 38);
             btnAceptar.TabIndex = 5;
             btnAceptar.Text = "Aceptar";
-            btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.UseVisualStyleBackColor = false;
             btnAceptar.Click += btnAceptar_Click;
             // 
             // FrmEditarCurso
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(1078, 717);
             Controls.Add(btnAceptar);
             Controls.Add(textBoxCupoMax);
             Controls.Add(textBoxDescripcion);
             Controls.Add(textBoxCodigo);
             Controls.Add(textBoxNombre);
             Controls.Add(label1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmEditarCurso";
             Text = "FrmEditarCurso";
             ResumeLayout(false);

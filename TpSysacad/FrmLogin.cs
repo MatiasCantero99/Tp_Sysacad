@@ -13,8 +13,8 @@ namespace Formularios
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            string dni = textUsuario.Text; // de momento se usa el dni de usuario
-            string contraseña = textContraseña.Text;
+            string dni = txtUsuario.Text; // de momento se usa el dni de usuario
+            string contraseña = txtContraseña.Text;
             bool verificado = false;
 
 
@@ -34,8 +34,8 @@ namespace Formularios
                     {
                         this.Close();
                     };
-                    frmPanelUsuario.Show();              
-                
+                    frmPanelUsuario.Show();
+
                     this.Hide();
 
                 }
@@ -43,8 +43,8 @@ namespace Formularios
                 else
                 {
                     MessageBox.Show("Usuario o contraseña Incorrecta");
-                    textUsuario.Text = string.Empty;
-                    textContraseña.Text = string.Empty;
+                    txtUsuario.Text = string.Empty;
+                    txtContraseña.Text = string.Empty;
 
                 }
             }
@@ -55,8 +55,16 @@ namespace Formularios
 
         }
 
+        private void btnAutompletar_Click(object sender, EventArgs e)
+        {
+            txtUsuario.Text = "011";
+            txtContraseña.Text = "11";
+        }
 
-
-
+        private void btnAutEstudiante_Click(object sender, EventArgs e)
+        {
+            txtUsuario.Text = "123";
+            txtContraseña.Text = "i43Ia%Jjv";
+        }
     }
 }

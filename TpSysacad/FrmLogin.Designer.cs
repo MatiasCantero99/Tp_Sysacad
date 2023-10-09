@@ -28,20 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             label1 = new Label();
             label2 = new Label();
             BtnLogin = new Button();
-            textUsuario = new TextBox();
-            textContraseña = new TextBox();
+            txtUsuario = new TextBox();
+            txtContraseña = new TextBox();
+            btnAutompletar = new Button();
+            dateTimePicker1 = new DateTimePicker();
+            btnAutEstudiante = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(150, 9);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ActiveCaptionText;
+            label1.Location = new Point(227, 9);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(417, 37);
+            label1.Size = new Size(655, 54);
             label1.TabIndex = 0;
             label1.Text = "Universidad Tecnológica Nacional";
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -49,52 +56,111 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.HotTrack;
-            label2.Location = new Point(235, 56);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.Desktop;
+            label2.Location = new Point(336, 93);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(217, 21);
+            label2.Size = new Size(350, 32);
             label2.TabIndex = 1;
             label2.Text = "Sistema Académico SYSACAD";
             label2.TextAlign = ContentAlignment.TopCenter;
             // 
             // BtnLogin
             // 
-            BtnLogin.Location = new Point(273, 301);
+            BtnLogin.BackColor = Color.FromArgb(153, 0, 255);
+            BtnLogin.BackgroundImage = (Image)resources.GetObject("BtnLogin.BackgroundImage");
+            BtnLogin.FlatAppearance.BorderSize = 0;
+            BtnLogin.FlatStyle = FlatStyle.Flat;
+            BtnLogin.ForeColor = Color.Transparent;
+            BtnLogin.Location = new Point(470, 476);
+            BtnLogin.Margin = new Padding(4, 5, 4, 5);
             BtnLogin.Name = "BtnLogin";
-            BtnLogin.Size = new Size(75, 23);
+            BtnLogin.Size = new Size(107, 32);
             BtnLogin.TabIndex = 2;
             BtnLogin.Text = "Login";
-            BtnLogin.UseVisualStyleBackColor = true;
+            BtnLogin.UseVisualStyleBackColor = false;
             BtnLogin.Click += BtnLogin_Click;
             // 
-            // textUsuario
+            // txtUsuario
             // 
-            textUsuario.Location = new Point(260, 154);
-            textUsuario.Name = "textUsuario";
-            textUsuario.PlaceholderText = "Usuario";
-            textUsuario.Size = new Size(100, 23);
-            textUsuario.TabIndex = 3;
+            txtUsuario.BackColor = Color.FromArgb(153, 0, 255);
+            txtUsuario.BorderStyle = BorderStyle.None;
+            txtUsuario.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            txtUsuario.ForeColor = Color.Black;
+            txtUsuario.Location = new Point(470, 241);
+            txtUsuario.Margin = new Padding(4, 5, 4, 5);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.PlaceholderText = "Usuario";
+            txtUsuario.Size = new Size(114, 24);
+            txtUsuario.TabIndex = 3;
+            txtUsuario.TextAlign = HorizontalAlignment.Center;
             // 
-            // textContraseña
+            // txtContraseña
             // 
-            textContraseña.Location = new Point(260, 222);
-            textContraseña.Name = "textContraseña";
-            textContraseña.PasswordChar = '*';
-            textContraseña.PlaceholderText = "Contraseña";
-            textContraseña.Size = new Size(100, 23);
-            textContraseña.TabIndex = 4;
+            txtContraseña.BackColor = Color.FromArgb(153, 0, 255);
+            txtContraseña.BorderStyle = BorderStyle.None;
+            txtContraseña.Location = new Point(470, 330);
+            txtContraseña.Margin = new Padding(4, 5, 4, 5);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.PasswordChar = '*';
+            txtContraseña.PlaceholderText = "Contraseña";
+            txtContraseña.Size = new Size(114, 24);
+            txtContraseña.TabIndex = 4;
+            txtContraseña.TextAlign = HorizontalAlignment.Center;
+            // 
+            // btnAutompletar
+            // 
+            btnAutompletar.BackColor = Color.BurlyWood;
+            btnAutompletar.FlatAppearance.BorderSize = 0;
+            btnAutompletar.FlatStyle = FlatStyle.Flat;
+            btnAutompletar.ForeColor = Color.Black;
+            btnAutompletar.Location = new Point(770, 330);
+            btnAutompletar.Name = "btnAutompletar";
+            btnAutompletar.Size = new Size(131, 34);
+            btnAutompletar.TabIndex = 5;
+            btnAutompletar.Text = "AutAdmin";
+            btnAutompletar.UseVisualStyleBackColor = false;
+            btnAutompletar.Click += btnAutompletar_Click;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(749, 685);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(329, 31);
+            dateTimePicker1.TabIndex = 6;
+            // 
+            // btnAutEstudiante
+            // 
+            btnAutEstudiante.BackColor = Color.MediumPurple;
+            btnAutEstudiante.FlatAppearance.BorderSize = 0;
+            btnAutEstudiante.FlatStyle = FlatStyle.Flat;
+            btnAutEstudiante.ForeColor = Color.Black;
+            btnAutEstudiante.Location = new Point(770, 370);
+            btnAutEstudiante.Name = "btnAutEstudiante";
+            btnAutEstudiante.Size = new Size(131, 34);
+            btnAutEstudiante.TabIndex = 7;
+            btnAutEstudiante.Text = "AutEstudiante";
+            btnAutEstudiante.UseVisualStyleBackColor = false;
+            btnAutEstudiante.Click += btnAutEstudiante_Click;
             // 
             // FrmLogin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(textContraseña);
-            Controls.Add(textUsuario);
+            BackgroundImage = Properties.Resources.login2;
+            ClientSize = new Size(1078, 717);
+            Controls.Add(btnAutEstudiante);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(btnAutompletar);
+            Controls.Add(txtContraseña);
+            Controls.Add(txtUsuario);
             Controls.Add(BtnLogin);
             Controls.Add(label2);
             Controls.Add(label1);
+            ForeColor = SystemColors.Control;
+            Margin = new Padding(4, 5, 4, 5);
             MaximizeBox = false;
             Name = "FrmLogin";
             Text = "Sysacad Login";
@@ -107,7 +173,10 @@
         private Label label1;
         private Label label2;
         private Button BtnLogin;
-        private TextBox textUsuario;
-        private TextBox textContraseña;
+        private TextBox txtUsuario;
+        private TextBox txtContraseña;
+        private Button btnAutompletar;
+        private DateTimePicker dateTimePicker1;
+        private Button btnAutEstudiante;
     }
 }

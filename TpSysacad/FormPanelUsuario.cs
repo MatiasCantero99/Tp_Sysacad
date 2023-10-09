@@ -62,11 +62,13 @@ namespace Formularios
                 btnInscripcionCurso.Visible = true;
                 btnConsultarHorario.Visible = true;
                 btnRealizarPagos.Visible = true;
+                lblTitulo.Text += " De Estudiante";
             }
             else if (usuario.TipoUsuario.ToString() == "Administrador")
             {
                 btnRegistrarEstudiante.Visible = true;
                 btnGestionarCursos.Visible = true;
+                lblTitulo.Text += " De Administrador";
             }
         }
 
@@ -102,5 +104,6 @@ namespace Formularios
             frmLogin.Show();
             this.Hide();
         }
+
     }
 }

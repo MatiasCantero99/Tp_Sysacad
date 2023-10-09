@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgregarCurso));
             textNombre = new TextBox();
             textCodigo = new TextBox();
             textDescripcion = new TextBox();
@@ -41,66 +42,86 @@
             // 
             // textNombre
             // 
-            textNombre.Location = new Point(396, 96);
+            textNombre.BackColor = Color.Khaki;
+            textNombre.BorderStyle = BorderStyle.None;
+            textNombre.Location = new Point(567, 161);
             textNombre.Margin = new Padding(4);
             textNombre.Name = "textNombre";
             textNombre.PlaceholderText = "Nombre";
-            textNombre.Size = new Size(155, 31);
+            textNombre.Size = new Size(155, 24);
             textNombre.TabIndex = 0;
+            textNombre.TextAlign = HorizontalAlignment.Center;
             textNombre.TextChanged += textBox1_TextChanged;
             // 
             // textCodigo
             // 
-            textCodigo.Location = new Point(396, 189);
+            textCodigo.BackColor = Color.Khaki;
+            textCodigo.BorderStyle = BorderStyle.None;
+            textCodigo.Location = new Point(567, 244);
             textCodigo.Margin = new Padding(4);
             textCodigo.Name = "textCodigo";
             textCodigo.PlaceholderText = "Código";
-            textCodigo.Size = new Size(155, 31);
+            textCodigo.Size = new Size(155, 24);
             textCodigo.TabIndex = 1;
+            textCodigo.TextAlign = HorizontalAlignment.Center;
             // 
             // textDescripcion
             // 
-            textDescripcion.Location = new Point(396, 285);
+            textDescripcion.BackColor = Color.Khaki;
+            textDescripcion.BorderStyle = BorderStyle.None;
+            textDescripcion.Location = new Point(567, 322);
             textDescripcion.Margin = new Padding(4);
             textDescripcion.Name = "textDescripcion";
             textDescripcion.PlaceholderText = "Descripción";
-            textDescripcion.Size = new Size(155, 31);
+            textDescripcion.Size = new Size(155, 24);
             textDescripcion.TabIndex = 2;
+            textDescripcion.TextAlign = HorizontalAlignment.Center;
             // 
             // textCupoMax
             // 
-            textCupoMax.Location = new Point(396, 376);
+            textCupoMax.BackColor = Color.Khaki;
+            textCupoMax.BorderStyle = BorderStyle.None;
+            textCupoMax.ForeColor = SystemColors.WindowText;
+            textCupoMax.Location = new Point(567, 399);
             textCupoMax.Margin = new Padding(4);
             textCupoMax.Name = "textCupoMax";
             textCupoMax.PlaceholderText = "Cupo Máximo";
-            textCupoMax.Size = new Size(155, 31);
+            textCupoMax.Size = new Size(155, 24);
             textCupoMax.TabIndex = 3;
+            textCupoMax.TextAlign = HorizontalAlignment.Center;
             // 
             // BtnAgregar
             // 
-            BtnAgregar.Location = new Point(409, 468);
+            BtnAgregar.BackColor = Color.Khaki;
+            BtnAgregar.FlatAppearance.BorderSize = 0;
+            BtnAgregar.FlatStyle = FlatStyle.Flat;
+            BtnAgregar.Location = new Point(751, 508);
             BtnAgregar.Margin = new Padding(4);
             BtnAgregar.Name = "BtnAgregar";
             BtnAgregar.Size = new Size(118, 36);
             BtnAgregar.TabIndex = 4;
             BtnAgregar.Text = "Agregar";
-            BtnAgregar.UseVisualStyleBackColor = true;
+            BtnAgregar.UseVisualStyleBackColor = false;
             BtnAgregar.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(410, 40);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Times New Roman", 14F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            label1.Location = new Point(732, 66);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(115, 25);
+            label1.Size = new Size(170, 32);
             label1.TabIndex = 5;
             label1.Text = "Nuevo Curso";
             // 
             // cBAula
             // 
+            cBAula.BackColor = Color.Gold;
+            cBAula.FlatStyle = FlatStyle.Flat;
             cBAula.FormattingEnabled = true;
-            cBAula.Location = new Point(659, 94);
+            cBAula.Location = new Point(842, 173);
             cBAula.Name = "cBAula";
             cBAula.Size = new Size(182, 33);
             cBAula.TabIndex = 6;
@@ -109,8 +130,10 @@
             // 
             // cBHorarios
             // 
+            cBHorarios.BackColor = Color.Gold;
+            cBHorarios.FlatStyle = FlatStyle.Flat;
             cBHorarios.FormattingEnabled = true;
-            cBHorarios.Location = new Point(659, 187);
+            cBHorarios.Location = new Point(842, 255);
             cBHorarios.Name = "cBHorarios";
             cBHorarios.Size = new Size(182, 33);
             cBHorarios.TabIndex = 7;
@@ -119,8 +142,10 @@
             // 
             // cBDias
             // 
+            cBDias.BackColor = Color.Gold;
+            cBDias.FlatStyle = FlatStyle.Flat;
             cBDias.FormattingEnabled = true;
-            cBDias.Location = new Point(659, 285);
+            cBDias.Location = new Point(842, 349);
             cBDias.Name = "cBDias";
             cBDias.Size = new Size(182, 33);
             cBDias.TabIndex = 8;
@@ -131,7 +156,8 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 562);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(1078, 717);
             Controls.Add(cBDias);
             Controls.Add(cBHorarios);
             Controls.Add(cBAula);

@@ -43,13 +43,15 @@
   },
   "1007": {
     "Debecambiar": false,
-    "Direccion": "matuk79@gmail.com",
+    "Direccion": "matuk79@gma.com",
     "Telefono": "12312312",
-    "CursosInscriptos": [],
+    "CursosInscriptos": [
+      "5"
+    ],
     "EstadoDePago": "pendiente",
     "Nombre": "asd",
     "Apellido": "dsa",
-    "Correo": "matuk79@gmail.com",
+    "Correo": "m9@gmail.com",
     "Dni": "123",
     "Clave": "$2a$08$cqXJWU7/AiYIAs5tCWCxM.hkUJDM3Uok45gCi2Sd.3p2xq17fJTpa",
     "TipoUsuario": 1,
@@ -110,5 +112,19 @@
     "Clave": "$2a$08$gK8HWi283bRVynRGHs4HoucT2B1Qwo5Jk2MyyXfF0TeqOnP/dF5yi",
     "TipoUsuario": 1,
     "Legajo": 1011
+  },
+  "1014": {
+    "Debecambiar": false,
+    "Direccion": "calle123",
+    "Telefono": "1234432112",
+    "CursosInscriptos": [],
+    "EstadoDePago": "pendiente",
+    "Nombre": "matu",
+    "Apellido": "cantero",
+    "Correo": "matuk79@gmail.com",
+    "Dni": "12122334",
+    "Clave": "$2a$08$2OS8ci0rvkF1BqI7J6PD4OGMSezQFRkKUqhsBGIQxFwoFoPNIp7HC",
+    "TipoUsuario": 1,
+    "Legajo": 1014
   }
 }
