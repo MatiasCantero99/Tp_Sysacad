@@ -137,6 +137,7 @@ namespace Formularios
                 BtnEditarCursos.Visible = true;
                 BtnEliminarCursos.Visible = true;
                 dataGridViewCursos.BackgroundColor = Color.SandyBrown;
+
             }
         }
 
