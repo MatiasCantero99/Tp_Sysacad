@@ -29,11 +29,10 @@ namespace BibliotecaCLases.Utilidades
 
                 File.WriteAllText(path, json);
 
-                Console.WriteLine($"El diccionario se ha guardado correctamente como JSON en: {path}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error al guardar el diccionario como JSON: {ex.Message}");
+
             }
         }
 
@@ -45,11 +44,10 @@ namespace BibliotecaCLases.Utilidades
 
                 File.WriteAllText(path, json);
 
-                Console.WriteLine($"El valor se ha guardado correctamente como JSON en: {path}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error al guardar el valor como JSON: {ex.Message}");
+
             }
         }
 
@@ -67,11 +65,10 @@ namespace BibliotecaCLases.Utilidades
 
                 File.WriteAllText(path, jsonResult);
 
-                Console.WriteLine($"El diccionario se ha actualizado correctamente como JSON en: {path}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error al actualizar el diccionario como JSON: {ex.Message}");
+
             }
         }
 
@@ -95,11 +92,10 @@ namespace BibliotecaCLases.Utilidades
 
                 File.WriteAllText(path, jsonResult);
 
-                Console.WriteLine($"El último dato se ha agregado correctamente al archivo JSON en: {path}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error al agregar el último dato al archivo JSON: {ex.Message}");
+
             }
         }
 
@@ -118,14 +114,10 @@ namespace BibliotecaCLases.Utilidades
                     string jsonString = File.ReadAllText(path);
                     return JsonConvert.DeserializeObject<T>(jsonString);
                 }
-                else
-                {
-                    Console.WriteLine($"El archivo JSON no existe en la ruta: {path}");
-                }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error al leer el archivo JSON: {ex.Message}");
+
             }
 
             return default(T);

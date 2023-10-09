@@ -63,8 +63,8 @@ namespace Formularios
 
         private void btnAutEstudiante_Click(object sender, EventArgs e)
         {
-            txtUsuario.Text = "123";
-            txtContraseña.Text = "i43Ia%Jjv";
+            txtUsuario.Text = "41928705";
+            txtContraseña.Text = "p3odag<g5";
         }
     }
 }
