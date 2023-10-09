@@ -26,7 +26,7 @@
     "Codigo": "3",
     "Descripcion": "Turno Tarde - Jueves",
     "CupoMaximo": 20,
-    "CuposDisponibles": 15,
+    "CuposDisponibles": 14,
     "Activo": true,
     "Dia": "Jueves",
     "Horario": "Tarde",

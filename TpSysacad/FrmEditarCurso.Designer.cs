@@ -120,6 +120,7 @@
             Controls.Add(textBoxNombre);
             Controls.Add(label1);
             Margin = new Padding(4, 5, 4, 5);
+            MaximizeBox = false;
             Name = "FrmEditarCurso";
             Text = "FrmEditarCurso";
             ResumeLayout(false);

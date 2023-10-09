@@ -163,6 +163,7 @@
             Controls.Add(dataGridViewHorario);
             ForeColor = SystemColors.ActiveCaptionText;
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "FormConsultarHorario";
             Text = "FormConsultarHorario";
             Load += FormConsultarHorario_Load;

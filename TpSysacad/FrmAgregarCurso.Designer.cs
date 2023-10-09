@@ -168,6 +168,7 @@
             Controls.Add(textCodigo);
             Controls.Add(textNombre);
             Margin = new Padding(4);
+            MaximizeBox = false;
             Name = "FrmAgregarCurso";
             Text = "FrmAgregarCurso";
             Load += FrmAgregarCurso_Load;

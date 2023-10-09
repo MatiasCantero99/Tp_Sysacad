@@ -162,6 +162,7 @@
             Controls.Add(lblTitulo);
             Controls.Add(btnGestionarCursos);
             Controls.Add(btnRegistrarEstudiante);
+            MaximizeBox = false;
             Name = "FormPanelUsuario";
             Text = "PanelUsuario";
             ResumeLayout(false);

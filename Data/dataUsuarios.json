@@ -31,7 +31,9 @@
     "Debecambiar": false,
     "Direccion": "calle 123",
     "Telefono": "1233214563",
-    "CursosInscriptos": [],
+    "CursosInscriptos": [
+      "3"
+    ],
     "EstadoDePago": "pendiente",
     "Nombre": "Matias",
     "Apellido": "Cantero",

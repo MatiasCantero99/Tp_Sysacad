@@ -184,6 +184,7 @@
             Controls.Add(textNombre);
             Controls.Add(lblRegistroEstudiante);
             Margin = new Padding(4, 5, 4, 5);
+            MaximizeBox = false;
             Name = "FrmRegistroEstudiante";
             Text = "FrmRegistroEstudiante";
             ResumeLayout(false);

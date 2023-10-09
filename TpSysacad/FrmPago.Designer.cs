@@ -209,6 +209,7 @@
             Controls.Add(dtgvConceptoPago);
             Controls.Add(label1);
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "FrmPago";
             Text = "FrmPago";
             Load += FrmPago_Load;

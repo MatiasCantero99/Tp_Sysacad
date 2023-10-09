@@ -205,6 +205,7 @@
             Controls.Add(label1);
             Controls.Add(dataGridViewCursos);
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "FrmGestionarCursos";
             Text = "FrmGestionarCurso";
             Load += FrmGestionarCurso_Load;
