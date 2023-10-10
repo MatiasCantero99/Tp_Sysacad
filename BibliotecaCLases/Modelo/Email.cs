@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using MailKit;
 using MailKit.Net.Smtp;
 using MimeKit;
+using System.Configuration;
 
 namespace BibliotecaCLases.Modelo
 {
@@ -20,8 +21,10 @@ namespace BibliotecaCLases.Modelo
         /// <param name="email"></param>
         public static string SendMessageSmtp(string email,string contraseña, string nombre, string apellido)
         {
+            string host = ConfigurationManager.AppSettings["mailgunHost"]!;
+            string password = ConfigurationManager.AppSettings["mailgunPassword"]!;
             MimeMessage mail = new MimeMessage();
-            mail.From.Add(new MailboxAddress("Sistema Sysacad", "foo@sandbox54c0a3c56b0042a2801b8f6c5cebe46a.mailgun.org"));
+            mail.From.Add(new MailboxAddress("Sistema Sysacad", $"foo@{host}"));
             mail.To.Add(new MailboxAddress($"{apellido},{nombre}", email));
             mail.Subject = "Registro de alumno";
             mail.Body = new TextPart("plain")
@@ -36,7 +39,7 @@ namespace BibliotecaCLases.Modelo
 
                     client.Connect("smtp.mailgun.org", 587, false);
                     client.AuthenticationMechanisms.Remove("XOAUTH2");
-                    client.Authenticate("postmaster@sandbox54c0a3c56b0042a2801b8f6c5cebe46a.mailgun.org", "6fe8556259578bfe346b768e1f8ff099-77316142-466e2907");
+                    client.Authenticate($"postmaster@{host}", password);
 
                     client.Send(mail);
                     client.Disconnect(true);

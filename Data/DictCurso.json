@@ -5,7 +5,7 @@
     "Descripcion": "progra 2",
     "CupoMaximo": 20,
     "CuposDisponibles": 15,
-    "Activo": true,
+    "Activo": false,
     "Dia": "Martes",
     "Horario": "Mañana",
     "Aula": "Aula207"
@@ -16,7 +16,7 @@
     "Descripcion": "Turno mañana - editado",
     "CupoMaximo": 15,
     "CuposDisponibles": 14,
-    "Activo": true,
+    "Activo": false,
     "Dia": "Martes",
     "Horario": "Mañana",
     "Aula": "Aula206"
@@ -27,7 +27,7 @@
     "Descripcion": "Turno Tarde - Jueves",
     "CupoMaximo": 20,
     "CuposDisponibles": 14,
-    "Activo": true,
+    "Activo": false,
     "Dia": "Jueves",
     "Horario": "Tarde",
     "Aula": "Aula306"
@@ -36,11 +36,44 @@
     "Nombre": "SPD",
     "Codigo": "5",
     "Descripcion": "Turno Noche - Martes",
-    "CupoMaximo": 20,
-    "CuposDisponibles": 18,
-    "Activo": true,
+    "CupoMaximo": 15,
+    "CuposDisponibles": 14,
+    "Activo": false,
     "Dia": "Martes",
     "Horario": "Noche",
     "Aula": "Aula307"
+  },
+  "7": {
+    "Nombre": "Progra",
+    "Codigo": "7",
+    "Descripcion": "turno tarde-jueves",
+    "CupoMaximo": 30,
+    "CuposDisponibles": 30,
+    "Activo": false,
+    "Dia": "Jueves",
+    "Horario": "Tarde",
+    "Aula": "Aula206"
+  },
+  "10": {
+    "Nombre": "ingles",
+    "Codigo": "10",
+    "Descripcion": "Turno tarde",
+    "CupoMaximo": 20,
+    "CuposDisponibles": 18,
+    "Activo": false,
+    "Dia": "Jueves",
+    "Horario": "Tarde",
+    "Aula": "Aula306"
+  },
+  "8": {
+    "Nombre": "Laboratorio II",
+    "Codigo": "8",
+    "Descripcion": "Turno mañana",
+    "CupoMaximo": 25,
+    "CuposDisponibles": 25,
+    "Activo": false,
+    "Dia": "Miercoles",
+    "Horario": "Mañana",
+    "Aula": "Aula306"
   }
 }

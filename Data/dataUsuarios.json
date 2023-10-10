@@ -32,7 +32,9 @@
     "Direccion": "calle 123",
     "Telefono": "1233214563",
     "CursosInscriptos": [
-      "3"
+      "3",
+      "10",
+      "5"
     ],
     "EstadoDePago": "pendiente",
     "Nombre": "Matias",
@@ -42,5 +44,47 @@
     "Clave": "$2a$08$WVEmJdLwystWgeXfg9YnPOf43HCRoxzTIrjCtNvfIV6YXPf6CDa6S",
     "TipoUsuario": 1,
     "Legajo": 1003
+  },
+  "1004": {
+    "Debecambiar": false,
+    "Direccion": "calle 1234",
+    "Telefono": "1134434565",
+    "CursosInscriptos": [],
+    "EstadoDePago": "pendiente",
+    "Nombre": "Matias",
+    "Apellido": "Cantero",
+    "Correo": "m9@gmail.com",
+    "Dni": "41928704",
+    "Clave": "$2a$08$nMSwYKgTvDiVby1C4jWLmeRhwpQmIrnVImdUp2A4pvtLOfU4.7dtK",
+    "TipoUsuario": 1,
+    "Legajo": 1004
+  },
+  "1005": {
+    "Debecambiar": false,
+    "Direccion": "calle 1234",
+    "Telefono": "1134434565",
+    "CursosInscriptos": [],
+    "EstadoDePago": "pendiente",
+    "Nombre": "Matias",
+    "Apellido": "Cantero",
+    "Correo": "mk9@gmail.com",
+    "Dni": "41928708",
+    "Clave": "$2a$08$owbjliAE2ZpTxHvt9Caq3u5Di20HikYj9O8DOaJfI9ALzQlc/n.F.",
+    "TipoUsuario": 1,
+    "Legajo": 1005
+  },
+  "1006": {
+    "Debecambiar": false,
+    "Direccion": "calle 123",
+    "Telefono": "1234567894",
+    "CursosInscriptos": [],
+    "EstadoDePago": "pendiente",
+    "Nombre": "pedrito",
+    "Apellido": "Cantero",
+    "Correo": "matuk79@gmail.com",
+    "Dni": "12345678",
+    "Clave": "$2a$08$BxMM3PPdzna805sAwFtZ4OoA5WgdEGPrJmfPKB2wC6Opp854304mS",
+    "TipoUsuario": 1,
+    "Legajo": 1006
   }
 }

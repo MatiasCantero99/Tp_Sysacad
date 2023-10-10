@@ -193,6 +193,7 @@ namespace BibliotecaCLases.Controlador
             int legajo = ObtieneLegajo();
 
             string claveProvisional = GenerarContrasenaAleatoria(7, 12);
+            //Environment.GetEnvironmentVariable();
             string mensaje = Email.SendMessageSmtp(correo, claveProvisional,nombre,apellido);
             String contrasena = PasswordHashing.GetHash(claveProvisional.ToString());
             Estudiante nuevoEstudiante = new(nombre, apellido, dni, correo, direccion, telefono, contrasena, debeCambiar);

@@ -126,7 +126,7 @@ namespace Formularios
             BtnEditarCursos.Visible = false;
             BtnEliminarCursos.Visible = false;
             btnInscripcion.Visible = false;
-            if (usuario.TipoUsuario.ToString() == "Estudiante")
+            if (usuario.TipoUsuario == Usuario.tipoUsuario.Estudiante)
             {
                 btnInscripcion.Visible = true;
                 dataGridViewCursos.BackgroundColor = Color.MediumSlateBlue;
